@@ -1,0 +1,71 @@
+.cardWork {
+    display: flex;
+    margin-left: 13%;
+}
+
+.cardWork h2 {
+    line-height: 0;
+    cursor: pointer;
+}
+
+.contentWork {
+    width: 62%;
+    margin-left: 18px;
+    margin-top: -11px;
+}
+
+.imgWork img {
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.year span {
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: #142850;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 26px;
+}
+
+.year p {
+    font-size: 20px;
+    color: #8695A4;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    .cardWork {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .contentWork h2 {
+        font-size: 24px;
+        position: relative;
+    }
+
+    .imgWork img {
+        width: 339px;
+        height: 230px;
+    }
+
+
+    .contentWork {
+        width: 80%;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+}

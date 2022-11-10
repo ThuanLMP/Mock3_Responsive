@@ -1,0 +1,219 @@
+.home {
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Css User */
+.user {
+    width: 100%;
+    margin-top: 228px;
+    display: flex;
+    justify-content: center;
+}
+
+.contentUser {
+    width: 44%;
+}
+
+.contentUser h1 {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.contentUser p {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.contentUser button {
+    color: #FFFFFF;
+    width: 208px;
+    height: 47px;
+    background-color: #FF6464;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.contentUser button:hover {
+    background-color: #fd4c4c;
+}
+
+.avatarUser {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+}
+
+/* Css Posts */
+
+.posts {
+    width: 100%;
+    height: 396px;
+    background-color: #EDF7FA;
+    margin-top: 71px;
+    position: relative;
+}
+
+.title {
+    display: inline;
+    margin-left: 13%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.posts a {
+    position: absolute;
+    right: 13%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 27px;
+    color: #00A8CC;
+    cursor: pointer;
+}
+
+.posts a:hover {
+    color: #034b5c;
+}
+
+.cardsPost {
+    display: flex;
+    justify-content: center;
+}
+
+.cardPost {
+    width: 35.5%;
+    height: auto;
+    min-height: 290px;
+    max-height: 300px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 22px;
+    padding-bottom: 30px;
+
+}
+
+.cardPost p {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    margin-left: 26px;
+    margin-right: 26px;
+    border-left: 1px solid #E0E0E0;
+    height: 21px;
+}
+
+/* Css Works */
+.cardWork {
+    display: flex;
+    margin-left: 13%;
+}
+
+.cardWork h2 {
+    line-height: 0;
+}
+
+.contentWork {
+    width: 62%;
+    margin-left: 18px;
+    margin-top: -11px;
+}
+
+.imgWork img {
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.year {
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.year span {
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: #142850;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 26px;
+}
+
+.year p {
+    font-size: 20px;
+    color: #8695A4;
+    font-weight: 400;
+}
+.solid {
+    border-top: 1px solid #E0E0E0;
+    width: 75%;
+    margin-left: 13%;
+    margin-bottom: 31px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contentUser h1 {
+        font-size: 32px;
+    }
+    .contentUser p {
+        font-size: 16px;
+    }
+    .user {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+       
+    }
+    .avatarUser {
+        justify-content: center;
+    }
+    .cardsPost {
+        flex-direction: column;
+    }
+    .cardPost {
+        margin-top: 17px;
+        width: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .cardPost h2 {
+        font-size: 22px;
+    }
+    .posts {
+        height: auto;
+        padding-bottom: 38px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        margin-left: 0;
+        font-size: 18px;
+        margin-bottom: -15px;
+    }
+    
+    .works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

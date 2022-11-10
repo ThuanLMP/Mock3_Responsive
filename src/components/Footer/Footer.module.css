@@ -1,0 +1,26 @@
+.footer {
+    height: 182px;
+    width: 2000px;
+    text-align: center;
+    display: table-cell; 
+    vertical-align: middle; 
+}
+
+.listContact {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.listContact li {
+    margin-right: 45px;
+}
+
+.listContact i {
+    font-size: 30px;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 400;
+}
