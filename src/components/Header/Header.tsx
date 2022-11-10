@@ -4,12 +4,16 @@ import { useMediaQuery } from 'react-responsive'
 import { useNavigate } from 'react-router-dom'
 import styles from './Header.module.css'
 
+type PropsHeader = {
+    typePage: String
+}
 
-function Header() {
+function Header({ typePage }: PropsHeader) {
+
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const navigate = useNavigate()
     const [stateNav, setStateNav] = useState<Boolean>(false)
-   
+
     return (
         <>
             <header className={styles.header}>
@@ -21,14 +25,14 @@ function Header() {
                             <i className="fal fa-bars"></i>
                         </div> :
                         <ul>
-                            <li className={styles.active}
-                                onClick={() => {                                    
+                            <li className={typePage === 'works' ? styles.active : undefined}
+                                onClick={() => {
                                     navigate('/works')
                                 }}
 
                             >Works
                             </li>
-                            <li
+                            <li className={typePage === 'blog' ? styles.active : undefined}
                                 onClick={() => {
                                     navigate('/blog')
                                 }}
@@ -43,15 +47,19 @@ function Header() {
                     <div className={styles.navOverlay}></div>
                     <div className={styles.navMobile}>
                         <h1>Navigate</h1>
-                        <div className={styles.btnIcon} onClick={()=>{
+                        <div className={styles.btnIcon} onClick={() => {
                             setStateNav(false)
                         }}><i className="far fa-times"></i></div>
                         <hr className={styles.solid}></hr>
                         <ul className={styles.navMobileList}>
-                            <li onClick={()=> {
+                            <li 
+                            className={typePage === 'works' ? styles.active : undefined}
+                            onClick={() => {
                                 navigate('../works')
                             }}>Works</li>
-                            <li onClick={()=> {
+                            <li 
+                            className={typePage === 'blog' ? styles.active : undefined}
+                            onClick={() => {
                                 navigate('../blog')
                             }}>Blog</li>
                             <li>Contact</li>
@@ -59,9 +67,6 @@ function Header() {
                     </div>
                 </div>
             }
-
-
-
         </>
 
     )

@@ -215,5 +215,18 @@
         flex-direction: column;
         align-items: center;
     }
+    .user {
+        margin-top: 83px;
+    }
+    .contentUser {
+        width: 83%;
+    }
+    .contentUser h2 {
+        font-size: 32px;
+        
+    }
+    .contentUser button {
+        margin-top: 27px;
+    }
     
 }
