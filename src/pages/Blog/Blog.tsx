@@ -1,11 +1,12 @@
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
+import Layout from '../../components/Layout/Layout'
 import styles from './Blog.module.css'
 
 function Blog() {
     return (
-        <>
-            <Header />
+        <Layout>
+            
             <div className={styles.blog}>
                 <h1>Blog</h1>
                 <div className={styles.wrapBlog}>
@@ -74,8 +75,8 @@ function Blog() {
                 </div>
 
             </div>
-            <Footer />
-        </>
+            
+        </Layout>
     )
 }
 

@@ -47,9 +47,20 @@
 @media only screen and (max-width: 768px) {
     .cardBlog {
         width: 90%;
+        margin-top: 24px;
     }
     .blog h1 {
         margin-left: 5%;
+        margin-bottom: 0;
+    }
+    .cardBlog h2 {
+        font-size: 26px;
+    }
+    .dateBlog {
+        font-size: 16px;
+    }
+    .blog h1{
+        margin-top: 74px;
     }
 }
 

@@ -1,12 +1,13 @@
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
+import Layout from '../../components/Layout/Layout'
 import Work from '../../components/Work'
 import styles from './Works.module.css'
 
 function Works() {
     return (
-        <>
-            <Header />
+        <Layout>
+            
             <div className={styles.works}>
                 <h1>Work</h1>
                 <Work />
@@ -15,8 +16,8 @@ function Works() {
                 <hr className={styles.solid}></hr>
                 <Work />
             </div>
-            <Footer />
-        </>
+         
+        </Layout>
 
     )
 }

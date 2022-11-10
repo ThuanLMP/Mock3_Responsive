@@ -6,14 +6,14 @@ import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
 import Work from '../../components/Work';
 import { useState } from 'react';
+import Layout from '../../components/Layout/Layout';
 
 
 function Home() {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
    
     return (
-        <div>
-            <Header />
+        <Layout>
             <div className={styles.home}>
                 <div className={styles.user}>
                     <div className={styles.contentUser}>
@@ -104,9 +104,9 @@ function Home() {
                     <hr className={styles.solid}></hr>
                 </div>
             </div>
-            <Footer />
+            
 
-        </div>
+        </Layout>
     );
 }
 

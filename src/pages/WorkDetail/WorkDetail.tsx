@@ -1,12 +1,13 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import Layout from "../../components/Layout/Layout";
 import styles from './WorkDetail.module.css'
 
 function WorkDetail() {
 
     return (
-        <>
-            <Header />
+        <Layout>
+           
             <div className={styles.wrapWorkDetail}>
                 <div className={styles.workDetail}>
                     <h1>Designing Dashboards with usability in mind</h1>
@@ -35,8 +36,8 @@ function WorkDetail() {
                 </div>
             </div>
 
-            <Footer />
-        </>
+            
+        </Layout>
 
     )
 }
